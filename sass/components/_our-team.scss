@@ -1,0 +1,88 @@
+.team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background-color: $background-second;
+  }
+  
+  .container .team-list:not(:last-child) {
+    margin-right: 30px;
+  } 
+  
+  .team-list {
+    
+    display: block;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    background-color: $background-white;
+  }
+  
+  .info-card-team {
+    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+    
+  }
+  
+  .team-title {
+    color: $title-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .team-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    display: block;
+    margin: 0px 0px 30px 0px;
+  }
+  
+  .contacts-team {
+    display: flex;
+    justify-content: space-around;
+    
+    list-style: none;
+    padding: 0px;
+    
+  }
+  
+  
+  .team-icon-li {
+    display: flex;
+    justify-content: center;
+   
+    fill: #AFB1B8;
+  
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: inherit;
+  
+    transition-property: fill, background-color ;
+    transition-duration: $time;
+    transition-timing-function: $cubic;
+  
+      &:focus,
+      &:hover {
+        outline: none;
+        background-color: $accent-collor;
+        fill: $text-color-w;
+      }
+  }
+  
+
+      
+   .link-icon-team:hover,
+   .link-icon-team:focus {
+     outline: none;
+      fill: $text-color-w;
+   }
+      
+  

@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  background-color: var(--background-white);
+ 
+}
+
+//  Блок навигации 
+
+.sait-nav {
+  align-items: center;
+}
+
+.list-nav {
+  margin-left: 85px;
+  display: flex;
+  
+}
+
+.list-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  display: block;
+  position: relative;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+}
+
+.active {
+  color: $accent-collor;
+    &::after {
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    transform: translate(0%, 50%);
+ 
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: $accent-collor;
+    }
+
+}
+
+
+// В навигации ссылки на наши контакты
+
+.contacts-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+}
+
+.contacts-nav li:not(:last-child) {
+  margin-right: 30px;
+ 
+}
+
+.nav-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+
+  color: $text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+   
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $accent-collor;
+    }
+}
+
+

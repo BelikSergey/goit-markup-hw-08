@@ -1,0 +1,39 @@
+// Стили на футтер не достающие в портфолио.
+
+.contacts-team {
+    display: flex;
+    justify-content: space-around;
+    
+    list-style: none;
+    padding: 0px;
+    
+  }
+  
+  .team-icon-li {
+    display: flex;
+    justify-content: center;
+   
+    fill: #AFB1B8;
+  
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: inherit;
+  
+    transition-property: fill, background-color ;
+    transition-duration: $time;
+    transition-timing-function: $cubic;
+  
+      &:focus,
+      &:hover {
+        outline: none;
+        background-color: $accent-collor;
+        fill: $text-color-w;
+      }
+  }
+
+  .link-icon-team:hover,
+  .link-icon-team:focus {
+    outline: none;
+    fill: $text-color-w;
+  } 

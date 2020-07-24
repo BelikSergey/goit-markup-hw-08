@@ -1,0 +1,53 @@
+
+@media screen and (max-width: 767px) {
+  .services  {
+    display: block;
+    display: none;
+    
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+  }
+}
+  
+  
+.container .list-services:not(:last-child) {
+   margin-right: 30px;
+    
+}  
+
+
+   .list-services {
+     display: block;
+     position: relative;
+   }
+      
+  .services-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+      &:hover,
+      &:focus {
+        color: $text-color-w;
+      }
+    
+  }
+      
+  
+      
+  .services-link {    
+    display: block;
+    
+  
+    color: $text-color-w;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+  }
+      

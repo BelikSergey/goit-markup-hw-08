@@ -1,0 +1,35 @@
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $background-white;
+ }   
+ 
+  .container .customer-list:not(:last-child) {
+      margin-right: 30px;
+   }  
+ 
+  .customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 170px;
+    height: 90px;
+    padding: 0;
+  
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+   
+    transition-property: fill, border;
+    transition-duration: $time;
+    transition-timing-function: $cubic;
+ 
+    &:hover,
+    &:focus {
+     outline: none;
+     border: 1px solid $accent-collor;
+     fill: $accent-collor;
+    }
+  
+   }

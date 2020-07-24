@@ -1,0 +1,36 @@
+
+.list-advantages {
+    display: block;
+    padding-top: 94px;
+  }
+   
+  .list-advantages p {
+    margin: 0px;
+  }
+  
+  .container .list-advantages:not(:last-child) {
+       margin-right: 30px;
+  }
+  
+  .img-advantages {
+      max-width: 270px;
+      max-height: 120px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+      background-color: $background-second;
+      border-radius: 4px;
+  }
+  
+  
+  .title {
+      display: block;
+      color: $title-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      
+  }
+  

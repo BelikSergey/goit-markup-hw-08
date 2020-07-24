@@ -1,0 +1,95 @@
+// основные стили текста на боди
+
+body {
+    background-color: $background-white;
+    color: $text-color;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+// шаблон для картинки
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  svg {
+    
+    max-width: 100%;
+    height: auto;
+  }
+
+
+// сброс стилей на списке
+
+.list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
+
+//  Общий шаблон ссылок 
+//  и их отработка при ховере и фокусе  
+
+.link {
+    color: #212121;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition-property: color;
+    transition-duration: $time;
+    transition-timing-function: $cubic;
+    
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $accent-collor;
+    }
+
+  }
+
+
+
+// шаблон контейнера
+
+.container {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+//  класс чтобы спрятать элемент
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
+
+//  шаблон Заголовок секции
+
+.section-title {
+  display: block;
+      
+  color: $title-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin: 0 0 50px 0;
+      
+}

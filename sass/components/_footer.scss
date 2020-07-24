@@ -1,0 +1,126 @@
+.footer {
+    display: flex;
+    background-color: #2f303a;
+    padding-bottom: 60px;
+  }
+  
+  .logo-footer {
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 0px;
+    color: $text-color-w;
+  }
+  
+  .address {
+    display: block;
+    margin-top: 20px;
+  
+    color: $text-color-w;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+  }
+  
+  .contacts-in-footer {
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+  
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $accent-collor;
+    }
+  
+  }
+  
+  .follow {
+    display: block;
+    margin-left: 69px;
+    margin-top: 72px;
+  }
+  
+  .footer-title {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  
+    color: $text-color-w;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    
+  }
+  
+  .icon-follow {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    
+  }
+   
+  .contacts-team .icon-follow:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .link-icon-footer {
+    fill: $text-color-w;
+    
+  }
+  
+  .mailing {
+    display: flex;
+    margin-left: auto;
+  }
+  .subscription {
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 73px;
+  
+  }
+  
+  .mail-to {
+    display: flex;
+    padding: 10px 29px;
+    border-radius: 4px;
+    
+    width: 200px;
+    height: 50px;
+    margin-top: 108px;
+  
+    background-color: $accent-collor;
+    color: $text-color-w;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    border-style: none;
+  
+      &:hover,
+      &:focus {
+        outline-style: none;
+      }
+  
+  }
+  
+  .mail-icon {
+    margin-left: 10px;
+    fill: #ffffff;
+  }
+  
+  
+  .input-mail {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #2F303A;
+    padding-left:16px; 
+    
+    &:focus {
+      outline-style: none;
+      color: $text-color-w;
+  
+    }
+  
+  }
+  

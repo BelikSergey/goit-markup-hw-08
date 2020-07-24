@@ -1,0 +1,269 @@
+
+  // Backdrop
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity $time $cubic;
+  
+  } 
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    
+  }
+  
+  // Modal window
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    display: flex;
+    padding: 40px;
+   
+    flex-direction: column;
+    max-width: 528px;
+    background: $background-white;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+   
+    overflow: auto;
+    transition: $time $cubic;
+  }
+  
+  // Заголовок формы
+  
+  .h1-modal{
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 0 30px 0;
+  
+    color: $title-color;
+  }
+  
+  // Стили Формы
+  
+  .modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-fild {
+    position: relative;
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+  
+  }
+  
+  .form-fild input {
+    width: 448px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    padding-left: 42px;
+  }
+  
+  .form-fild input, textarea  {
+    margin: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  
+  // Стили для иконок и анимации в модалке
+        
+  .vrapper-icon {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    
+    transform: translate(0, -50%);
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+  
+    transition: transform, fill $time $cubic;
+   
+  }
+        
+  .input-name {
+    position: absolute;
+    left:42px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: transform $time $cubic;
+  }     
+    
+  .form-input {
+    transition: border $time $cubic;
+  
+     &:focus {
+      border: 1px solid $accent-collor;
+      outline: none;
+  
+     }
+  }
+        
+  .form-input:focus + .input-name, 
+  .form-input:not(:placeholder-shown) + .input-name {
+     transform: translate(-26px, -200%);
+     color: $accent-collor;
+        
+  }      
+  
+  .form-input:focus ~ .vrapper-icon {
+    fill: $accent-collor;
+  }
+        
+  .terms {
+    color: $accent-collor;
+  }      
+  
+  // Стили формы "оставить комментарий"
+        
+  
+  .comment {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+  
+    transition:  border $time $cubic;
+  
+      &:focus {
+        border: 1px solid $accent-collor;
+        outline: none;
+      }
+  }
+        
+  .text-comment {
+    position: absolute;
+    transform: translate(0, 0);
+    left:16px;
+    top: 12px;
+    transition: transform $time $cubic;
+  }      
+  
+  .comment:focus + .text-comment, 
+  .comment:not(:placeholder-shown) + .text-comment {
+     transform: translate(0, -150%);
+     color: $accent-collor;
+  
+  }
+   
+  .placeholder-area {
+    margin-bottom: 0;
+  
+  }
+  
+  // Checkbox
+  
+  .checkbox {
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-left: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    
+  }
+  
+  .chek-icon {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    display: block;
+    padding: 0;
+  
+    border-radius: 2px;
+    border: 1px solid #212121;
+    width: 16px;
+    height: 15px;
+    
+  }
+        
+  .check:checked + .chek-icon {
+    background-image: url(../img/svg-sprite/check-on.svg);
+    background-color: $accent-collor;
+    background-size: contain;
+    background-origin: border-box;
+    border: 1px solid $accent-collor;
+    border-radius: 2px;
+  }      
+        
+  // Стили кнопки отправить
+    
+  .send {
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;  
+    letter-spacing: 0.06em;
+    
+    color: $text-color-w;
+    background: $accent-collor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-style: none;
+  
+    &:focus,
+    &:hover {
+      outline-style: none;
+    }
+  
+  }    
+  
+  //  Кнопка закрытия формы
+  
+  .close-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-8px, 8px);
+  
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: $text-color-w;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+   
+    transition: fill $time $cubic;
+  
+     &:hover,
+     &:focus {
+      fill: $accent-collor;
+      outline: none;
+     }
+  }
+  
