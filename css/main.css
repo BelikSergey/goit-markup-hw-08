@@ -244,6 +244,11 @@ svg {
   color: #2196f3;
 }
 
+.contacts-link.nav-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .nav-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -632,5 +637,264 @@ svg {
 .input-mail:focus {
   outline-style: none;
   color: #ffffff;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 30px);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  overflow: auto;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.h1-modal {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 30px 0;
+  color: #212121;
+}
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-fild {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.form-fild input {
+  width: 100%;
+  height: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  padding-left: 42px;
+}
+
+.form-fild input, textarea {
+  margin: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.vrapper-icon {
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  transition: transform, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+}
+
+.input-name {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input {
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
+.form-input:focus + .input-name,
+.form-input:not(:placeholder-shown) + .input-name {
+  -webkit-transform: translate(-26px, -200%);
+          transform: translate(-26px, -200%);
+  color: #2196f3;
+}
+
+.form-input:focus ~ .vrapper-icon {
+  fill: #2196f3;
+}
+
+.terms {
+  color: #2196f3;
+}
+
+.comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
+.text-comment {
+  position: absolute;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  left: 16px;
+  top: 12px;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment:focus + .text-comment,
+.comment:not(:placeholder-shown) + .text-comment {
+  -webkit-transform: translate(0, -150%);
+          transform: translate(0, -150%);
+  color: #2196f3;
+}
+
+.placeholder-area {
+  margin-bottom: 0;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+.chek-icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translate(-150%);
+          transform: translate(-150%);
+  display: block;
+  padding: 0;
+  border-radius: 2px;
+  border: 1px solid #212121;
+  width: 16px;
+  height: 15px;
+}
+
+.check:checked + .chek-icon {
+  background-image: url(../img/svg-sprite/check-on.svg);
+  background-color: #2196f3;
+  background-size: contain;
+  background-origin: border-box;
+  border: 1px solid #2196f3;
+  border-radius: 2px;
+}
+
+.send {
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+}
+
+.send:focus, .send:hover {
+  outline-style: none;
+}
+
+.close-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(-8px, 8px);
+          transform: translate(-8px, 8px);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover, .close-icon:focus {
+  fill: #2196f3;
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */
