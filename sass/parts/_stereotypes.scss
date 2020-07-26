@@ -19,7 +19,7 @@ body {
     height: auto;
   }
   svg {
-    
+  //   display: block;
     max-width: 100%;
     height: auto;
   }
@@ -51,6 +51,7 @@ body {
 .container {
     display: block;
    
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -86,8 +87,24 @@ body {
         margin: 0 0 50px 0;
         
     }
-
-   
-
-        
+     
   }
+
+//  Общий шаблон ссылок 
+//  и их отработка при ховере и фокусе  
+  
+.link {
+    color: #212121;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition-property: color;
+    transition-duration: $time;
+    transition-timing-function: $cubic;
+    
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $accent-collor;
+    }
+
+}  

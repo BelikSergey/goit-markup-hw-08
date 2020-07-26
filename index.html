@@ -18,49 +18,70 @@
   <body>
     <!--Шапка сайта -->
     <header class="header">
-      <nav class="container sait-nav">
+
+      <nav class="container sait-nav" >
+        
+
         <a class="logotype" href="./index.html">
           <span class="logo-text logo-text-accent">Web </span>
           <span class="logo-text">Studio</span>
-        
         </a>
 
-        <ul class="list-nav list ">
-          <li>
-            <a class="nav-link link active" href="./index.html">Студия</a>
-          </li>
+        <button type="button" class="mobile-menu-button"
+       data-menu-button
+       aria-expanded="false"
+       aria-controls="mob-menu"
+       >
 
-          <li>
-            <a class="nav-link link" href="./portfolio.html">Портфолио</a>
-          </li>
+        <svg  
+        width="40px"
+        height="40px" 
+        aria-label="переключатель мобильного меню"
+        >
+          <use class="icon-close" href="./img/symbol-defs.svg#close-mob"></use>
+          <use class="icon-menu" href="./img/symbol-defs.svg#menu-mob"></use>
+        </svg>
+        </button>
 
-          <li>
-            <a class="nav-link link" href="/">Контакты</a>
-          </li>
+        <div class="mobile-menu " id="mob-menu" data-menu>
 
-        </ul>
-        
-        <ul class="contacts-nav list">
-          <li>
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="nav-icon" width="22px" height="16px">
-                <use href="./img/symbol-defs.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contacts-link" href="tel:380961111111">
-              <svg class="nav-icon" width="15px" height="20px">
-                <use href="./img/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="mobile-menu">
+          <ul class="list-nav list" >
+            <li>
+              <a class="nav-link link active" href="./index.html">Студия</a>
+            </li>
+  
+            <li>
+              <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+  
+            <li>
+              <a class="nav-link link" href="/">Контакты</a>
+            </li>
+  
+          </ul>
+          
+          <ul class="contacts-nav list">
+            <li>
+              <a class="contacts-link" href="mailto:info@devstudio.com">
+                <svg class="nav-icon" width="22px" height="16px">
+                  <use href="./img/symbol-defs.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contacts-link" href="tel:380961111111">
+                <svg class="nav-icon" width="15px" height="20px">
+                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
+      
+      </nav>
+      
     </header>
     <main>
       <!-- Герой-->
@@ -477,12 +498,12 @@
               г. Киев, пр-т Леси Украинки, 26 
             </span>
 
-            <a class="contacts-link contacts-in-footer" href="mailto:info@example.com"
+            <a class="contacts-in-footer link" href="mailto:info@example.com"
               >info@example.com</a
             >
           
 
-            <a class="contacts-link contacts-in-footer" href="tel:+390991111111"
+            <a class="contacts-in-footer link" href="tel:+390991111111"
               >+38 099 111 11 11</a
             >
           </address>
@@ -637,7 +658,7 @@
 
 
 
-
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 
 
