@@ -1,13 +1,14 @@
 @import "./utils/variables";
-@import "./components/stereotype";
-@import "./components/header";
-@import "./components/logo";
-@import "./components/portfolio/filters-button";
-@import "./components/portfolio/examples";
-@import "./components/portfolio/card-examples";
-@import "./components/portfolio/addition-footer";
+@import "./parts/stereotypes";
+@import "./parts/logo";
+@import "./parts/header";
+@import "./parts/menu-header";
+@import "./parts/portfolio/filters-button";
+@import "./parts/portfolio/card-examples";
+@import "./parts/portfolio/examples";
+@import "./parts/portfolio/addition-footer";
 
-@import "./components/footer";
+@import "./parts/footer";
 
 
 

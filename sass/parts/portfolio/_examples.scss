@@ -1,0 +1,26 @@
+ // Примеры наших работ
+
+ .list-examples {
+    // display: flex;
+    // flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+  
+  .examples {
+    display: block;
+    
+    text-decoration: none;
+    color: $text-color-w;
+    font-size: 18px;
+    line-height: 1.56;
+  
+    transition-property: box-shadow;
+    transition-duration: $time;
+    transition-timing-function: $cubic;
+  
+      &:hover,
+      &:focus {
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+      }
+  
+  }
