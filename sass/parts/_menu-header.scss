@@ -24,7 +24,20 @@
         display: block;
         
        }
+       @media screen and (min-width:481px) {
+        display: flex;
+        position: static;
+        z-index: 0;
+        width: inherit;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background-color: invert($color: #000000);
 
+        box-shadow: none;
+        
+
+      }
 
 }
  
@@ -45,12 +58,21 @@
     transition-duration: $time;
     transition-timing-function: $cubic;
      
+
+
         &:hover,
         &:focus {
             fill: $accent-collor ;
             outline-style: none;
-        }
+        
+          }
+          @media screen and (min-width:481px) {
+            display: none;
+          }       
+
  }
+
+
  .mobile-menu-button .icon-close {
      display: none  ;
  }
@@ -67,6 +89,10 @@
 
 .list-nav li:not(:last-child) {
     margin-bottom: 40px;
+
+    @media screen and (min-width:481px) {
+      margin-bottom: 0;
+    }
 }
 
 .nav-link {
@@ -76,6 +102,13 @@
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width:481px) {
+          font-size: 14px;
+          line-height: 1.14;
+        
+    }   
+
   
 }  
 
@@ -87,6 +120,10 @@
 
     margin-bottom: 12px;
     color: $accent-collor;
+
+    @media screen and (min-width:481px) {
+      margin-bottom: 0;
+    }
 
       &::after {
       content: '';
@@ -100,6 +137,13 @@
       width: 100%;
       border-radius: 4px;
       background-color: $accent-collor;
+
+      @media screen and (min-width:481px) {
+        bottom: -28px;
+        
+         
+      }   
+
       }
   
   }
@@ -110,8 +154,17 @@
     margin-top: 60px;
 
     & li:not(:last-child) {
-        margin-bottom: 16px;
-    }
+        display: flex;
+        margin-bottom: 10px;
+        
+      }
+
+     @media screen and (min-width:481px) {
+       margin-top: 0;
+       margin-left: 84px;
+       
+     }
+    
   
 }
 
@@ -138,11 +191,14 @@
       color: $accent-collor;
     }
 
-    &.nav-icon {
-        margin-right: 10px;
-        fill: currentColor;
-      }
+ 
     
+      @media screen and (min-width:481px) {
+      font-size: 12px;
+       line-height: 1.17;
+       
+      }
+
 }
 
 
@@ -150,4 +206,7 @@
 .nav-icon {
   margin-right: 10px;
   fill: currentColor;
+  @media screen and (min-width:481px) {
+    margin-right: 8px;
+  }
 }  

@@ -36,7 +36,6 @@ svg {
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -53,6 +52,14 @@ svg {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 481px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .section {
@@ -72,7 +79,7 @@ svg {
   margin: 0 0 30px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .section-title {
     display: block;
     font-size: 36px;
@@ -98,17 +105,26 @@ svg {
 }
 
 .logotype {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 769px) {
+  .logotype {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-text-accent {
@@ -117,10 +133,37 @@ svg {
 
 .header {
   position: relative;
+  width: 100%;
 }
 
 .sait-nav {
   padding: 15px 16px;
+}
+
+@media screen and (min-width: 481px) {
+  .list-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 81px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .list-nav li:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .nav-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .mobile-menu {
@@ -139,6 +182,23 @@ svg {
 
 .mobile-menu.is-open {
   display: block;
+}
+
+@media screen and (min-width: 481px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    z-index: 0;
+    width: inherit;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 .mobile-menu-button {
@@ -165,6 +225,12 @@ svg {
   outline-style: none;
 }
 
+@media screen and (min-width: 481px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
 .mobile-menu-button .icon-close {
   display: none;
 }
@@ -181,6 +247,12 @@ svg {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 481px) {
+  .list-nav li:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .nav-link {
   display: inline-block;
   font-weight: 500;
@@ -189,10 +261,23 @@ svg {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 481px) {
+  .nav-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .active {
   position: relative;
   margin-bottom: 12px;
   color: #2196f3;
+}
+
+@media screen and (min-width: 481px) {
+  .active {
+    margin-bottom: 0;
+  }
 }
 
 .active::after {
@@ -208,12 +293,28 @@ svg {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 481px) {
+  .active::after {
+    bottom: -28px;
+  }
+}
+
 .contacts-nav {
   margin-top: 60px;
 }
 
 .contacts-nav li:not(:last-child) {
-  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  .contacts-nav {
+    margin-top: 0;
+    margin-left: 84px;
+  }
 }
 
 .contacts-link {
@@ -245,14 +346,22 @@ svg {
   color: #2196f3;
 }
 
-.contacts-link.nav-icon {
-  margin-right: 10px;
-  fill: currentColor;
+@media screen and (min-width: 481px) {
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .nav-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 481px) {
+  .nav-icon {
+    margin-right: 8px;
+  }
 }
 
 .container-buttoms {
