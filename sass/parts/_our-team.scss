@@ -20,6 +20,10 @@
         margin-bottom: 30px;
       }
     }
+    @media screen and (min-width:481px) and (max-width:768px) {
+      margin: 15px;
+      width: calc((100% - 2 * 30px) / 2);
+    }
 }
   
   .info-card-team {

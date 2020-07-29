@@ -1,7 +1,19 @@
+.cont-tablet {
+  @media screen and (min-width:481px) and (max-width:768px) {
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+    
+  }
+}
+
 
 
 .container .list-advantages:not(:last-child) {
   margin-bottom: 30px;
+  @media screen and (min-width:481px) {
+    margin-bottom: 0;
+  }
 }
 
 .img-advantages {
@@ -30,4 +42,11 @@
 .all-text {
   margin: 0px;
 }
-  
+
+.list-advantages {
+  @media screen and (min-width:481px) and (max-width:768px) {
+    
+    width: calc((100% - 2 * 30px) / 2);  
+    margin: 15px;
+    }
+}

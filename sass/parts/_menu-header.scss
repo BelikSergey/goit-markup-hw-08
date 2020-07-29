@@ -95,6 +95,14 @@
     }
 }
 
+@media screen and (min-width:481px) {
+  .list-nav {
+    margin-left: auto;
+
+  }
+  
+}
+
 .nav-link {
     display: inline-block;
 
@@ -139,7 +147,7 @@
       background-color: $accent-collor;
 
       @media screen and (min-width:481px) {
-        bottom: -28px;
+        bottom: -30px;
         
          
       }   
@@ -151,6 +159,7 @@
 // стили контактов тел. и мыло. мобильной версии.
 
 .contacts-nav {
+    display: inline-block;
     margin-top: 60px;
 
     & li:not(:last-child) {
@@ -159,9 +168,11 @@
         
       }
 
-     @media screen and (min-width:481px) {
+     @media screen and (min-width:481px) 
+     and (max-width:768px) {
        margin-top: 0;
-       margin-left: 84px;
+       margin-left: auto;
+       text-align: start;
        
      }
     
@@ -169,8 +180,7 @@
 }
 
 .contacts-link {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
   
   
@@ -195,7 +205,7 @@
     
       @media screen and (min-width:481px) {
       font-size: 12px;
-       line-height: 1.17;
+        line-height: 1.17;
        
       }
 

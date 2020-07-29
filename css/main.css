@@ -47,14 +47,13 @@ svg {
 
 .container {
   display: block;
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -138,6 +137,16 @@ svg {
 
 .sait-nav {
   padding: 15px 16px;
+}
+
+@media screen and (min-width: 481px) {
+  .sait-nav {
+    width: 100%;
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -253,6 +262,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 481px) {
+  .list-nav {
+    margin-left: auto;
+  }
+}
+
 .nav-link {
   display: inline-block;
   font-weight: 500;
@@ -295,11 +310,12 @@ svg {
 
 @media screen and (min-width: 481px) {
   .active::after {
-    bottom: -28px;
+    bottom: -30px;
   }
 }
 
 .contacts-nav {
+  display: inline-block;
   margin-top: 60px;
 }
 
@@ -310,20 +326,18 @@ svg {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .contacts-nav {
     margin-top: 0;
-    margin-left: 84px;
+    margin-left: auto;
+    text-align: start;
   }
 }
 
 .contacts-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -425,8 +439,25 @@ svg {
   color: #ffffff;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cont-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .container .list-advantages:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 481px) {
+  .container .list-advantages:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .img-advantages {
@@ -454,7 +485,14 @@ svg {
   margin: 0px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .list-advantages {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .services {
     display: block;
     display: none;
@@ -510,6 +548,13 @@ svg {
 @media screen and (max-width: 480px) {
   .team-list:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .team-list {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 
@@ -596,6 +641,12 @@ svg {
   width: calc((100% - 2 * 30px) / 2);
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .customers li {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
 .customer-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,6 +688,18 @@ svg {
   color: #ffffff;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .mobile-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,6 +710,12 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 60px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile-footer {
+    margin-right: auto;
+  }
 }
 
 .address {
@@ -673,6 +742,12 @@ svg {
 .follow {
   display: block;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .follow {
+    margin-right: 89px;
+  }
 }
 
 .footer-title {
@@ -747,6 +822,12 @@ svg {
 .input-mail:focus {
   outline-style: none;
   color: #ffffff;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .input-mail {
+    min-width: 450px;
+  }
 }
 
 .backdrop {

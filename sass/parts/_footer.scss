@@ -13,11 +13,25 @@
     
   }
 
+  .footer-tablet {
+    @media screen and (min-width:481px) and (max-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+    }
+  } 
+
 .mobile-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 60px;
+
+  @media screen and (min-width:481px) and (max-width:768px){
+    margin-right: auto;
+  }
+
   
 }  
 
@@ -52,6 +66,9 @@
   .follow {
     display: block;
     margin-top: 60px;
+    @media screen and (min-width:481px) and (max-width:768px){
+      margin-right: 89px;
+    }
   }
   
   .footer-title {
@@ -141,6 +158,10 @@
       color: $text-color-w;
   
     }
-  
+    @media screen and (min-width:481px) and (max-width:768px){
+      min-width: 450px;;
+    }
+
+
   }
   
