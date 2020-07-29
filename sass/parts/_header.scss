@@ -8,8 +8,8 @@
 .sait-nav {
     padding: 15px 16px;
 
- @media screen and (min-width:481px) {
-        // padding: 0 15px;
+ @media screen and (min-width:481px) and (max-width:768px) {
+        padding: 0 15px;
         width: 100%;
         height: 80px;
         align-items: center;

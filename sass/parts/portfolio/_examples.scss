@@ -4,6 +4,13 @@
     // display: flex;
     // flex-wrap: wrap;
     padding-bottom: 60px;
+    
+    @media screen and (min-width:481px) and (max-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc((100% - 2 * 30px) / 2);  
+      margin: 15px;
+      }
   }
   
   .examples {

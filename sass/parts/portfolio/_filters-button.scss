@@ -5,6 +5,10 @@
     margin-top: -15px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width:481px) and (max-width:768px) {
+      margin-left: auto;
+      margin-right: auto;    
+    }
   
 
   }
@@ -12,7 +16,14 @@
   .mob-container {
     padding-top: 60px;
     padding-bottom: 40px;
+    
+    @media screen and (min-width:481px) and (max-width:768px) {
+      padding-bottom: 30px;
+       
+    }
+
   }
+
 
   .nav-buttom {
     margin-top: 15px;
