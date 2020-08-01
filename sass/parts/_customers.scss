@@ -1,24 +1,44 @@
  
- 
-//   .container .customer-list:not(:last-child) {
-//       margin-right: 30px;
-//    }  
+
 
 .customers  {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-      
+  margin: -15px; 
+  @media screen and (min-width:769px) {
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+   }
+
 }
 
+
 .customers li {
+  @media screen and (max-width:480px){
    margin: 15px;
    width: calc((100% - 2 * 30px) / 2);
+  }
 
    @media screen and (min-width:481px) and (max-width:768px) {
     width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
    }
- 
+   
+   @media screen and (min-width:769px) {
+    width: 100%;
+     
+    }
+  
+  
+   @media screen and (min-width:769px) {
+     &:not(:last-child) {
+      margin-right: 30px;
+      
+     }
+   }
+
 }
 
 

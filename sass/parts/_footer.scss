@@ -31,7 +31,10 @@
   @media screen and (min-width:481px) and (max-width:768px){
     margin-right: auto;
   }
-
+  @media screen and (min-width:769px){
+    
+    display: block;
+  }
   
 }  
 
@@ -47,6 +50,10 @@
   line-height: 1.71;
   font-style: normal;
 
+  @media screen and (min-width:769px){
+    text-align: start;
+  }
+
  }
 
   
@@ -54,6 +61,10 @@
     display: block;
     margin-top: 8px;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width:769px){
+      margin-top: 9px;
+    }
   
     &:hover,
     &:focus {
@@ -68,6 +79,11 @@
     margin-top: 60px;
     @media screen and (min-width:481px) and (max-width:768px){
       margin-right: 89px;
+      margin-top: 65px;
+    }
+    @media screen and (min-width:769px){
+      margin-top: 72px;
+      margin-left: 69px;
     }
   }
   
@@ -81,7 +97,9 @@
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
-    
+    @media screen and (min-width:769px){
+      text-align: start;
+    }
   }
   
   .icon-follow {
@@ -99,17 +117,26 @@
     
   }
   
-  // .mailing {
-  //   display: inline-flex;
-  //   // text-align: center;
-  //   flex-wrap: wrap;
-   
-  // }
+  @media screen and (min-width:769px){
+    .mailing {
+    display: inline-flex;
+    // text-align: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    // margin-top: 72px;
 
-  .subscription {
-        
-    margin-top: 60px;
-  
+    }
+  }
+ 
+.subscription {  
+    @media screen and (max-width:768px){
+     margin-top: 60px;
+    }
+    @media screen and (min-width:769px){
+      display: inline-block;
+      margin-right: 12px;
+      margin-top: 72px;
+    }
   }
   
   .mail-to {
@@ -129,6 +156,11 @@
     font-size: 16px;
     line-height: 1.88;
     border-style: none;
+
+    @media screen and (min-width:769px) {
+      margin-top: 107px;
+     
+    }
   
       &:hover,
       &:focus {
@@ -160,6 +192,9 @@
     }
     @media screen and (min-width:481px) and (max-width:768px){
       min-width: 450px;;
+    }
+    @media screen and (min-width:769px) {
+      min-width: 358px;
     }
 
 

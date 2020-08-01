@@ -1,17 +1,20 @@
  // Примеры наших работ
 
- .list-examples {
-    // display: flex;
-    // flex-wrap: wrap;
+.list-examples {
+    
     padding-bottom: 60px;
     
-    @media screen and (min-width:481px) and (max-width:768px) {
+    @media screen and (min-width:481px) {
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
    
       }
-  }
+      @media screen and (min-width:769px) {
+        padding-bottom: 94px;
+        
+      }
+}
   
   .examples {
     display: block;

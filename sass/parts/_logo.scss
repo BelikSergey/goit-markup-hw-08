@@ -1,5 +1,5 @@
 .logotype {
-    display: inline-block;
+    display: inline-flex;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -11,10 +11,7 @@
     letter-spacing: 0.03em;
     color: $title-color;
 
-    @media screen and (min-width:481px)  {
-      display: inline-flex;
-          
-    }
+   
      
     @media screen and (min-width:769px) {
       font-size: 26px;

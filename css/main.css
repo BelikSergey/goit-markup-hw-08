@@ -120,7 +120,9 @@ svg {
 }
 
 .logotype {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -131,14 +133,6 @@ svg {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-@media screen and (min-width: 481px) {
-  .logotype {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
 }
 
 @media screen and (min-width: 769px) {
@@ -170,6 +164,7 @@ svg {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100%;
   }
 }
 
@@ -224,7 +219,6 @@ svg {
 }
 
 .mobile-menu {
-  display: none;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -235,10 +229,21 @@ svg {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
   text-align: center;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
 }
 
 .mobile-menu.is-open {
-  display: block;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media screen and (min-width: 481px) {
@@ -253,6 +258,8 @@ svg {
     left: 0;
     padding: 0;
     background-color: white;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -488,7 +495,7 @@ svg {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .main-title {
     max-width: 696px;
     font-size: 44px;
@@ -525,13 +532,9 @@ svg {
   }
 }
 
-.container .list-advantages:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .container .list-advantages:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -539,10 +542,6 @@ svg {
   .container .list-advantages:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.list-advantages {
-  margin: 15px;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -733,14 +732,39 @@ svg {
   margin: -15px;
 }
 
-.customers li {
-  margin: 15px;
-  width: calc((100% - 2 * 30px) / 2);
+@media screen and (min-width: 769px) {
+  .customers {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .customers li {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .customers li {
     width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .customers li {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .customers li:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -815,6 +839,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .mobile-footer {
+    display: block;
+  }
+}
+
 .address {
   width: 100%;
   text-align: center;
@@ -825,10 +855,22 @@ svg {
   font-style: normal;
 }
 
+@media screen and (min-width: 769px) {
+  .address {
+    text-align: start;
+  }
+}
+
 .contacts-in-footer {
   display: block;
   margin-top: 8px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 769px) {
+  .contacts-in-footer {
+    margin-top: 9px;
+  }
 }
 
 .contacts-in-footer:hover, .contacts-in-footer:focus {
@@ -844,6 +886,14 @@ svg {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .follow {
     margin-right: 89px;
+    margin-top: 65px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .follow {
+    margin-top: 72px;
+    margin-left: 69px;
   }
 }
 
@@ -856,6 +906,12 @@ svg {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
+}
+
+@media screen and (min-width: 769px) {
+  .footer-title {
+    text-align: start;
+  }
 }
 
 .icon-follow {
@@ -871,8 +927,29 @@ svg {
   fill: #ffffff;
 }
 
-.subscription {
-  margin-top: 60px;
+@media screen and (min-width: 769px) {
+  .mailing {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .subscription {
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 72px;
+  }
 }
 
 .mail-to {
@@ -892,6 +969,12 @@ svg {
   font-size: 16px;
   line-height: 1.88;
   border-style: none;
+}
+
+@media screen and (min-width: 769px) {
+  .mail-to {
+    margin-top: 107px;
+  }
 }
 
 .mail-to:hover, .mail-to:focus {
@@ -924,6 +1007,12 @@ svg {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .input-mail {
     min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .input-mail {
+    min-width: 358px;
   }
 }
 
@@ -970,6 +1059,12 @@ svg {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .modal {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .modal {
+    max-width: 528px;
   }
 }
 
@@ -1129,6 +1224,13 @@ svg {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 769px) {
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .chek-icon {
   position: absolute;
   left: 0;
@@ -1141,6 +1243,12 @@ svg {
   border: 1px solid #212121;
   width: 16px;
   height: 15px;
+}
+
+@media screen and (min-width: 769px) {
+  .chek-icon {
+    top: 4px;
+  }
 }
 
 .check:checked + .chek-icon {
@@ -1174,10 +1282,8 @@ svg {
 
 .close-icon {
   position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform: translate(-8px, 8px);
-          transform: translate(-8px, 8px);
+  right: 8px;
+  top: 8px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -1190,5 +1296,11 @@ svg {
 .close-icon:hover, .close-icon:focus {
   fill: #2196f3;
   outline: none;
+}
+
+@media screen and (min-width: 769px) {
+  .close-icon {
+    font-size: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
