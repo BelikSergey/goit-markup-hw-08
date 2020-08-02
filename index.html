@@ -147,20 +147,19 @@
           <ul class="list container">
             <li class="list-services">
                <picture>
-                  <!-- <source srcset="
-                  ./content-img/project1-370.webp 370w,
-                  ./content-img/project1-370-2x.webp 740w"                  "
-                   type="image/webp">   -->
-
-                
+                <source srcset="
+                ./content-img/project1-370.webp 370w,
+                ./content-img/project1-370@2x.webp 740w"                  "
+                 type="image/webp">
+ 
                 <img srcset="
                 ./content-img/project1-370.jpg 370w, 
-                ./content-img/project1-370-2x.jpg 740w"
+                ./content-img/project1-370@2x.jpg 740w"
 
                  src="./content-img/project1-370.jpg"
                 
                  alt="на картинке ноутбук"
-                
+                 sizes="(max-width: 480px) 100vw, (min-width: 768px) 33vw"
                />
                </picture>
            
@@ -168,21 +167,41 @@
             
             </li>
             <li class="list-services">
-              <img
-                src="./img/projects2.jpg"
-                width="370"
-                height="294"
-                alt="на картинке смартфон"
-              />
+              <picture>
+                <source srcset="
+                ./content-img/project2-370.webp 1x,
+                ./content-img/project2-370-2x.webp 2x"                  "
+                 type="image/webp">
+ 
+                <img srcset="
+                ./content-img/project2-370.jpg 1x, 
+                ./content-img/project2-370-2x.jpg 2x"
+
+                 src="./content-img/project2-370.jpg"
+                
+                 alt="на картинке ноутбук"
+                
+               />
+               </picture>
               <a class="services-link link" href="/">Мобильные приложения</a>
             </li>
             <li class="list-services">
-              <img
-                src="./img/projects3.jpg"
-                width="370"
-                height="294"
-                alt="на картинке Монитор с картинкой"
-              />
+              <picture>
+                <source srcset="
+                ./content-img/project3-370.webp 1x,
+                ./content-img/project3-370-2x.webp 2x"                  "
+                 type="image/webp">
+ 
+                <img srcset="
+                ./content-img/project3-370.jpg 1x, 
+                ./content-img/project3-370-2x.jpg 2x"
+
+                 src="./content-img/project3-370.jpg"
+                
+                 alt="на картинке ноутбук"
+                
+               />
+               </picture>
               <a class="services-link link" href="/">Дизайнерские решения</a>
             </li>
           </ul>
@@ -193,6 +212,8 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list container cont-tablet">
           <li class="team-list">
+
+
             <img
               src="./img/fotoJon.jpg"
               alt="Фотография Николай Кучеренко"
