@@ -18,68 +18,68 @@
   </head>
   <body>
     <header class="header">
-      
       <nav class="container sait-nav">
-        
         <a class="logotype" href="./index.html">
           <span class="logo-text logo-text-accent">Web </span>
           <span class="logo-text">&#160;Studio</span>
-        
         </a>
 
-          <button type="button" class="mobile-menu-button"
-        data-menu-button
-        aria-expanded="false"
-        aria-controls="mob-menu"
+        <button
+          type="button"
+          class="mobile-menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mob-menu"
         >
-
-          <svg  
-          width="40px"
-          height="40px" 
-          aria-label="переключатель мобильного меню"
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобильного меню"
           >
-            <use class="icon-close" href="./img/symbol-defs.svg#close-mob"></use>
+            <use
+              class="icon-close"
+              href="./img/symbol-defs.svg#close-mob"
+            ></use>
             <use class="icon-menu" href="./img/symbol-defs.svg#menu-mob"></use>
           </svg>
-          </button>
+        </button>
 
-          <div class="mobile-menu " id="mob-menu" data-menu >
-          
-            <ul class="list-nav list ">
-              <li>
-                <a class="nav-link link" href="./index.html">Студия</a>
-              </li>
+        <div class="mobile-menu" id="mob-menu" data-menu>
+          <ul class="list-nav list">
+            <li>
+              <a class="nav-link link" href="./index.html">Студия</a>
+            </li>
 
-              <li>
-                <a class="nav-link link active" href="./portfolio.html">Портфолио</a>
-              </li>
+            <li>
+              <a class="nav-link link active" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
 
-              <li>
-                <a class="nav-link link" href="/">Контакты</a>
-              </li>
+            <li>
+              <a class="nav-link link" href="/">Контакты</a>
+            </li>
+          </ul>
 
-            </ul>
-            
-            <ul class="contacts-nav list">
-              <li>
-                <a class="contacts-link" href="mailto:info@devstudio.com">
-                  <svg class="nav-icon" width="22px" height="16px">
-                    <use href="./img/symbol-defs.svg#icon-email"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="contacts-link" href="tel:380961111111">
-                  <svg class="nav-icon" width="15px" height="20px">
-                    <use href="./img/symbol-defs.svg#icon-phone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
-
+          <ul class="contacts-nav list">
+            <li>
+              <a class="contacts-link" href="mailto:info@devstudio.com">
+                <svg class="nav-icon" width="22px" height="16px">
+                  <use href="./img/symbol-defs.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contacts-link" href="tel:380961111111">
+                <svg class="nav-icon" width="15px" height="20px">
+                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main">
@@ -112,38 +112,90 @@
           <ul class="list list-examples">
             <li class="item-examples">
               <a class="examples" href="">
-                  <div class="examples-window">
-                    <img
-                       class="img"
-                       src="./img/portfolio/one.jpg"
-                       alt="Синий квадрат"
+                <div class="examples-window">
+                  <picture>
+                    <source
+                      srcset="
+                      ./content-img/portfolio/portf-ex-one-354.webp 354w,
+                      ./content-img/portfolio/portf-ex-one-354-2x.webp 708W, 
+                      ./content-img/portfolio/portf-ex-one-370.webp 370w,
+                      ./content-img/portfolio/portf-ex-one-370-2x.webp 740w,             
+                      ./content-img/portfolio/portf-ex-one-450.webp 450w,
+                      ./content-img/portfolio/portf-ex-one-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
                     />
-                     <div class="clarify-window">
-                      <p class="clarify-text">
-                        Технокряк это современная площадка распространения
-                        коронавируса. Компании используют эту платформу для
-                        цифрового шпионажа и атак на защищённые сервера конкурентов.
-                      </p>
-                    </div>
 
+                    <img
+                      class="team-foto"
+                      srcset="
+                    ./content-img/portfolio/portf-ex-one-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-one-354-2x.webp 708w, 
+                    ./content-img/portfolio/portf-ex-one-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-one-370-2x.webp 740w,           
+                    ./content-img/portfolio/portf-ex-one-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-one-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-one-354.jpg"
+                      alt="Синий квадрат"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
+                  <div class="clarify-window">
+                    <p class="clarify-text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
                   </div>
+                </div>
                 <div class="card-content">
                   <h2 class="examples-title">Технокряк</h2>
                   <p class="examples-filter">Веб-сайт</p>
-                  
                 </div>
               </a>
             </li>
             <li class="item-examples">
               <a class="examples" href="">
-                <div class="examples-window"> 
-                  <img src="./img/portfolio/two.jpg" alt="Два баскетболиста" />
-                    <div class="clarify-window">
-                      <p class="clarify-text">
-                        Технокряк это современная площадка распространения
-                        коронавируса. Компании используют эту платформу для
-                        цифрового шпионажа и атак на защищённые сервера конкурентов.
-                       </p> 
+                <div class="examples-window">
+                  <picture>
+                    <source
+                      srcset="
+                    ./content-img/portfolio/portf-ex-two-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-two-354-2x.webp 708W, 
+                    ./content-img/portfolio/portf-ex-two-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-two-370-2x.webp 740w,             
+                    ./content-img/portfolio/portf-ex-two-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-two-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                  ./content-img/portfolio/portf-ex-two-354.webp 354w,
+                  ./content-img/portfolio/portf-ex-two-354-2x.webp 708w, 
+                  ./content-img/portfolio/portf-ex-two-370.webp 370w,
+                  ./content-img/portfolio/portf-ex-two-370-2x.webp 740w,           
+                  ./content-img/portfolio/portf-ex-two-450.webp 450w,
+                  ./content-img/portfolio/portf-ex-two-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-two-354.jpg"
+                      alt="Два баскетболиста"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
+                  <div class="clarify-window">
+                    <p class="clarify-text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
                   </div>
                 </div>
                 <div class="card-content">
@@ -151,65 +203,145 @@
                     Постер New Orlean vs Golden Star
                   </h2>
                   <p class="examples-filter">Дизайн</p>
-                  
                 </div>
-              </a>
-            </li>
-            <li class="item-examples">
-              <a class="examples" href="">
-                <div class="examples-window">  
-                    <img
-                      src="./img/portfolio/three.jpg"
-                      alt="Логотип ресторана с рыбой"
-                    />
-                      <div class="clarify-window">
-                        <p class="clarify-text">
-                          Технокряк это современная площадка распространения
-                          коронавируса. Компании используют эту платформу для
-                          цифрового шпионажа и атак на защищённые сервера конкурентов.
-                        </p>
-                      </div>
-                  </div>
-                  <div class="card-content">
-                    <h2 class="examples-title">Ресторан Seafood</h2>
-                    <p class="examples-filter">Приложение</p>
-                    
-                  </div>
-                
               </a>
             </li>
             <li class="item-examples">
               <a class="examples" href="">
                 <div class="examples-window">
-                  <img src="./img/portfolio/four.jpg" alt="Наушники" />
+                  <picture>
+                    <source
+                      srcset="
+                    ./content-img/portfolio/portf-ex-three-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-three-354-2x.webp 708W, 
+                    ./content-img/portfolio/portf-ex-three-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-three-370-2x.webp 740w,             
+                    ./content-img/portfolio/portf-ex-three-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-three-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                  ./content-img/portfolio/portf-ex-three-354.webp 354w,
+                  ./content-img/portfolio/portf-ex-three-354-2x.webp 708w, 
+                  ./content-img/portfolio/portf-ex-three-370.webp 370w,
+                  ./content-img/portfolio/portf-ex-three-370-2x.webp 740w,           
+                  ./content-img/portfolio/portf-ex-three-450.webp 450w,
+                  ./content-img/portfolio/portf-ex-three-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-three-354.jpg"
+                      alt="Логотип ресторана с рыбой"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
                   <div class="clarify-window">
                     <p class="clarify-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера конкурентов.
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
                     </p>
                   </div>
                 </div>
-                  <div class="card-content">
-                    <h2 class="examples-title">Проект Prime</h2>
-                    <p class="examples-filter">Маркетинг</p>
-                    
-                  </div>
+                <div class="card-content">
+                  <h2 class="examples-title">Ресторан Seafood</h2>
+                  <p class="examples-filter">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="item-examples">
               <a class="examples" href="">
-                  <div class="examples-window">
-                    <img src="./img/portfolio/five.jpg" alt="коробки" />
-                    <div class="clarify-window">
-                      <p class="clarify-text">
-                        Технокряк это современная площадка распространения
-                        коронавируса. Компании используют эту платформу для
-                        цифрового шпионажа и атак на защищённые сервера конкурентов.
-                      </p>
-                    </div>
+                <div class="examples-window">
+                  <picture>
+                    <source
+                      srcset="
+                    ./content-img/portfolio/portf-ex-four-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-four-354-2x.webp 708W, 
+                    ./content-img/portfolio/portf-ex-four-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-four-370-2x.webp 740w,             
+                    ./content-img/portfolio/portf-ex-four-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-four-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                  ./content-img/portfolio/portf-ex-four-354.webp 354w,
+                  ./content-img/portfolio/portf-ex-four-354-2x.webp 708w, 
+                  ./content-img/portfolio/portf-ex-four-370.webp 370w,
+                  ./content-img/portfolio/portf-ex-four-370-2x.webp 740w,           
+                  ./content-img/portfolio/portf-ex-four-450.webp 450w,
+                  ./content-img/portfolio/portf-ex-four-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-four-354.jpg"
+                      alt="Наушники"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
+                  <div class="clarify-window">
+                    <p class="clarify-text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
                   </div>
-                 <div class="card-content">
+                </div>
+                <div class="card-content">
+                  <h2 class="examples-title">Проект Prime</h2>
+                  <p class="examples-filter">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-examples">
+              <a class="examples" href="">
+                <div class="examples-window">
+                  <picture>
+                    <source
+                      srcset="
+                      ./content-img/portfolio/portf-ex-five-354.webp 354w,
+                      ./content-img/portfolio/portf-ex-five-354-2x.webp 708W, 
+                      ./content-img/portfolio/portf-ex-five-370.webp 370w,
+                      ./content-img/portfolio/portf-ex-five-370-2x.webp 740w,             
+                      ./content-img/portfolio/portf-ex-five-450.webp 450w,
+                      ./content-img/portfolio/portf-ex-five-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                    ./content-img/portfolio/portf-ex-five-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-five-354-2x.webp 708w, 
+                    ./content-img/portfolio/portf-ex-five-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-five-370-2x.webp 740w,           
+                    ./content-img/portfolio/portf-ex-five-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-five-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-five-354.jpg"
+                      alt="коробки"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
+                  <div class="clarify-window">
+                    <p class="clarify-text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
                   <h2 class="examples-title">Проект Boxes</h2>
                   <p class="examples-filter">Приложение</p>
                 </div>
@@ -218,50 +350,135 @@
             <li class="item-examples">
               <a class="examples" href="">
                 <div class="examples-window">
-                  <img src="./img/portfolio/six.jpg" alt="Монитор" />
+                  <picture>
+                    <source
+                      srcset="
+                    ./content-img/portfolio/portf-ex-six-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-six-354-2x.webp 708W, 
+                    ./content-img/portfolio/portf-ex-six-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-six-370-2x.webp 740w,             
+                    ./content-img/portfolio/portf-ex-six-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-six-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                  ./content-img/portfolio/portf-ex-six-354.webp 354w,
+                  ./content-img/portfolio/portf-ex-six-354-2x.webp 708w, 
+                  ./content-img/portfolio/portf-ex-six-370.webp 370w,
+                  ./content-img/portfolio/portf-ex-six-370-2x.webp 740w,           
+                  ./content-img/portfolio/portf-ex-six-450.webp 450w,
+                  ./content-img/portfolio/portf-ex-six-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-six-354.jpg"
+                      alt="Монитор"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
                   <div class="clarify-window">
                     <p class="clarify-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера конкурентов.
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
                     </p>
                   </div>
                 </div>
                 <div class="card-content">
                   <h2 class="examples-title">Inspiration has no Borders</h2>
                   <p class="examples-filter">Веб-сайт</p>
-               
                 </div>
               </a>
             </li>
             <li class="item-examples">
               <a class="examples" href="">
                 <div class="examples-window">
-                  <img src="./img/portfolio/seven.jpg" alt="Раскрытый журнал" />
+                  <picture>
+                    <source
+                      srcset="
+                    ./content-img/portfolio/portf-ex-seven-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-seven-354-2x.webp 708W, 
+                    ./content-img/portfolio/portf-ex-seven-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-seven-370-2x.webp 740w,             
+                    ./content-img/portfolio/portf-ex-seven-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-seven-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                  ./content-img/portfolio/portf-ex-seven-354.webp 354w,
+                  ./content-img/portfolio/portf-ex-seven-354-2x.webp 708w, 
+                  ./content-img/portfolio/portf-ex-seven-370.webp 370w,
+                  ./content-img/portfolio/portf-ex-seven-370-2x.webp 740w,           
+                  ./content-img/portfolio/portf-ex-seven-450.webp 450w,
+                  ./content-img/portfolio/portf-ex-seven-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-seven-354.jpg"
+                      alt="Раскрытый журнал"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
                   <div class="clarify-window">
                     <p class="clarify-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера конкурентов.
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
                     </p>
                   </div>
-                </div>   
+                </div>
                 <div class="card-content">
                   <h2 class="examples-title">Издание Limited Edition</h2>
                   <p class="examples-filter">Дизайн</p>
-                 
                 </div>
               </a>
             </li>
             <li class="item-examples">
               <a class="examples" href="">
                 <div class="examples-window">
-                  <img src="./img/portfolio/eight.jpg" alt="Бирка" />
+                  <picture>
+                    <source
+                      srcset="
+                    ./content-img/portfolio/portf-ex-eight-354.webp 354w,
+                    ./content-img/portfolio/portf-ex-eight-354-2x.webp 708W, 
+                    ./content-img/portfolio/portf-ex-eight-370.webp 370w,
+                    ./content-img/portfolio/portf-ex-eight-370-2x.webp 740w,             
+                    ./content-img/portfolio/portf-ex-eight-450.webp 450w,
+                    ./content-img/portfolio/portf-ex-eight-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                  ./content-img/portfolio/portf-ex-eight-354.webp 354w,
+                  ./content-img/portfolio/portf-ex-eight-354-2x.webp 708w, 
+                  ./content-img/portfolio/portf-ex-eight-370.webp 370w,
+                  ./content-img/portfolio/portf-ex-eight-370-2x.webp 740w,           
+                  ./content-img/portfolio/portf-ex-eight-450.webp 450w,
+                  ./content-img/portfolio/portf-ex-eight-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-eight-354.jpg"
+                      alt="Бирка"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
+
                   <div class="clarify-window">
                     <p class="clarify-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера конкурентов.
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
                     </p>
                   </div>
                 </div>
@@ -274,19 +491,41 @@
             <li class="item-examples">
               <a class="examples" href="">
                 <div class="examples-window">
+                  <picture>
+                    <source
+                      srcset="./content-img/portfolio/portf-ex-nine-354.webp 354w, ./content-img/portfolio/portf-ex-nine-354-2x.webp 708W, ./content-img/portfolio/portf-ex-nine-370.webp 370w, ./content-img/portfolio/portf-ex-nine-370-2x.webp 740w, ./content-img/portfolio/portf-ex-nine-450.webp 450w, ./content-img/portfolio/portf-ex-nine-450-2x.webp 900W"
+                      type="image/webp"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+
+                    <img
+                      class="team-foto"
+                      srcset="
+                  ./content-img/portfolio/portf-ex-nine-354.webp 354w,
+                  ./content-img/portfolio/portf-ex-nine-354-2x.webp 708w, 
+                  ./content-img/portfolio/portf-ex-nine-370.webp 370w,
+                  ./content-img/portfolio/portf-ex-nine-370-2x.webp 740w,           
+                  ./content-img/portfolio/portf-ex-nine-450.webp 450w,
+                  ./content-img/portfolio/portf-ex-nine-450-2x.webp 900W"
+                      class="img"
+                      src="./content-img/portfolio/portf-ex-nine-354.jpg"
+                      alt="Открытый ноутбук"
+                      sizes="(min-width:769px) 33vw, (min-width:481px) 50vw, (max-width:480px) 100vw"
+                    />
+                  </picture>
                   <img src="./img/portfolio/nine.jpg" alt="Открытый ноутбук" />
                   <div class="clarify-window">
                     <p class="clarify-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера конкурентов.
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
                     </p>
                   </div>
                 </div>
                 <div class="card-content">
                   <h2 class="examples-title">Growing Business</h2>
                   <p class="examples-filter">Приложение</p>
-                  
                 </div>
               </a>
             </li>
@@ -307,13 +546,12 @@
 
           <address class="address">
             <span class="adress-fotter">
-              г. Киев, пр-т Леси Украинки, 26 
+              г. Киев, пр-т Леси Украинки, 26
             </span>
 
             <a class="contacts-in-footer link" href="mailto:info@example.com"
               >info@example.com</a
             >
-          
 
             <a class="contacts-in-footer link" href="tel:+390991111111"
               >+38 099 111 11 11</a
@@ -373,10 +611,10 @@
           </div>
         </section>
         <div class="mailing">
-          <div class="subscription">  
+          <div class="subscription">
             <b class="footer-title">подпишитесь на рассылку</b>
-            <label  class="mail-input">
-              <input class="input-mail" type="email" placeholder="E-mail">
+            <label class="mail-input">
+              <input class="input-mail" type="email" placeholder="E-mail" />
             </label>
           </div>
           <button class="mail-to" type="button">
@@ -388,7 +626,6 @@
         </div>
       </div>
     </footer>
-
 
     <script src="./js/menu.js"></script>
   </body>

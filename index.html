@@ -18,48 +18,47 @@
   <body>
     <!--Шапка сайта -->
     <header class="header">
-
-      <nav class="container sait-nav" >
-        
-
+      <nav class="container sait-nav">
         <a class="logotype" href="./index.html">
           <span class="logo-text logo-text-accent">Web</span>
           <span class="logo-text">&#160;Studio</span>
         </a>
 
-        <button type="button" class="mobile-menu-button"
-       data-menu-button
-       aria-expanded="false"
-       aria-controls="mob-menu"
-       >
-
-        <svg  
-        width="40px"
-        height="40px" 
-        aria-label="переключатель мобильного меню"
+        <button
+          type="button"
+          class="mobile-menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mob-menu"
         >
-          <use class="icon-close" href="./img/symbol-defs.svg#close-mob"></use>
-          <use class="icon-menu" href="./img/symbol-defs.svg#menu-mob"></use>
-        </svg>
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-close"
+              href="./img/symbol-defs.svg#close-mob"
+            ></use>
+            <use class="icon-menu" href="./img/symbol-defs.svg#menu-mob"></use>
+          </svg>
         </button>
 
-        <div class="mobile-menu " id="mob-menu" data-menu>
-
-          <ul class="list-nav list" >
+        <div class="mobile-menu" id="mob-menu" data-menu>
+          <ul class="list-nav list">
             <li>
               <a class="nav-link link active" href="./index.html">Студия</a>
             </li>
-  
+
             <li>
               <a class="nav-link link" href="./portfolio.html">Портфолио</a>
             </li>
-  
+
             <li>
               <a class="nav-link link" href="/">Контакты</a>
             </li>
-  
           </ul>
-          
+
           <ul class="contacts-nav list">
             <li>
               <a class="contacts-link" href="mailto:info@devstudio.com">
@@ -79,16 +78,16 @@
             </li>
           </ul>
         </div>
-      
       </nav>
-      
     </header>
     <main>
       <!-- Герой-->
       <section class="main-hero">
         <div class="hero-cont">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open class="button" href="/">Заказать услугу</button>
+          <button data-modal-open class="button" href="/">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- секция с преимуществами фирмы-->
@@ -146,62 +145,70 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list container">
             <li class="list-services">
-               <picture>
-                <source srcset="
-                ./content-img/project1-370.webp 370w,
-                ./content-img/project1-370@2x.webp 740w"                  "
-                 type="image/webp">
- 
-                <img srcset="
-                ./content-img/project1-370.jpg 370w, 
-                ./content-img/project1-370@2x.jpg 740w"
+              <picture>
+                <source
+                  srcset="
+                    ./content-img/project1-370.webp    1x,
+                    ./content-img/project1-370@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
 
-                 src="./content-img/project1-370.jpg"
-                
-                 alt="на картинке ноутбук"
-                 sizes="(max-width: 480px) 100vw, (min-width: 768px) 33vw"
-               />
-               </picture>
-           
+                <img
+                  srcset="
+                    ./content-img/project1-370.jpg    1x,
+                    ./content-img/project1-370@2x.jpg 2x
+                  "
+                  src="./content-img/project1-370.jpg"
+                  alt="на картинке ноутбук"
+                  sizes="(min-width: 768px) 33vw"
+                />
+              </picture>
+
               <a class="services-link link" href="/">Десктопные приложения</a>
-            
             </li>
             <li class="list-services">
               <picture>
-                <source srcset="
-                ./content-img/project2-370.webp 1x,
-                ./content-img/project2-370-2x.webp 2x"                  "
-                 type="image/webp">
- 
-                <img srcset="
-                ./content-img/project2-370.jpg 1x, 
-                ./content-img/project2-370-2x.jpg 2x"
+                <source
+                  srcset="
+                    ./content-img/project2-370.webp    1x,
+                    ./content-img/project2-370-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
 
-                 src="./content-img/project2-370.jpg"
-                
-                 alt="на картинке ноутбук"
-                
-               />
-               </picture>
+                <img
+                  srcset="
+                    ./content-img/project2-370.jpg    1x,
+                    ./content-img/project2-370-2x.jpg 2x
+                  "
+                  src="./content-img/project2-370.jpg"
+                  alt="на картинке смартфон"
+                  sizes="(min-width: 768px) 33vw"
+                />
+              </picture>
               <a class="services-link link" href="/">Мобильные приложения</a>
             </li>
             <li class="list-services">
               <picture>
-                <source srcset="
-                ./content-img/project3-370.webp 1x,
-                ./content-img/project3-370-2x.webp 2x"                  "
-                 type="image/webp">
- 
-                <img srcset="
-                ./content-img/project3-370.jpg 1x, 
-                ./content-img/project3-370-2x.jpg 2x"
+                <source
+                  srcset="
+                    ./content-img/project3-370.webp    1x,
+                    ./content-img/project3-370-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
 
-                 src="./content-img/project3-370.jpg"
-                
-                 alt="на картинке ноутбук"
-                
-               />
-               </picture>
+                <img
+                  srcset="
+                    ./content-img/project3-370.jpg    1x,
+                    ./content-img/project3-370-2x.jpg 2x
+                  "
+                  src="./content-img/project3-370.jpg"
+                  alt="на картинке экрам монитора"
+                  sizes="(min-width: 768px) 33vw"
+                />
+              </picture>
               <a class="services-link link" href="/">Дизайнерские решения</a>
             </li>
           </ul>
@@ -212,12 +219,34 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list container cont-tablet">
           <li class="team-list">
+            <picture>
+              <source
+                srcset="
+                ./content-img/Nikolay-270.webp 270w,              
+                ./content-img/Nikolay-354.webp 354w,
+                ./content-img/Nikolay-450.webp 450W,
+                ./content-img/Nikolay-270-2x.webp 540w,
+                ./content-img/Nikolay-354-2x.webp 708w,
+                ./content-img/Nikolay-450-2x.webp 900W"
+                type="image/webp"
+                sizes="(min-width:769px) 25vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
 
+              <img
+                class="team-foto"
+                srcset="
+                  ./content-img/Nikolay-270.jpg 270w,
+                  ./content-img/Nikolay-270@2x.jpg 270W,              
+                  ./content-img/Nikolay-354.jpg 354w,
+                  ./content-img/Nikolay-354-2x.jpg 708W,
+                  ./content-img/Nikolay-450.jpg 450w,
+                  ./content-img/Nikolay-450@2x.jpg 900w"
+                src="./content-img/Nikolay-450.jpg"
+                alt="Фотография Николай Кучеренко"
+                sizes="(min-width:769px) 20vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
+            </picture>
 
-            <img
-              src="./img/fotoJon.jpg"
-              alt="Фотография Николай Кучеренко"
-            />
             <div class="info-card-team">
               <h3 class="team-title">Николай Кучеренко</h3>
               <p class="team-position">Product Designer</p>
@@ -270,10 +299,34 @@
             </div>
           </li>
           <li class="team-list">
-            <img
-              src="./img/fotoMarta.jpg"
-              alt="Фотография Ольга Иванова"
-            />
+            <picture>
+              <source
+                srcset="
+                          ./content-img/olga-270.webp 270w,              
+                          ./content-img/olga-354.webp 354w,
+                          ./content-img/olga-450.webp 450W,
+                          ./content-img/olga-270-2x.webp 540w,
+                          ./content-img/olga-354-2x.webp 708w,
+                          ./content-img/olga-450-2x.webp 900W"
+                type="image/webp"
+                sizes="(min-width:769px) 25vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
+
+              <img
+                class="team-foto"
+                srcset="
+                            ./content-img/olga-270.jpg 270w,
+                            ./content-img/olga-270@2x.jpg 270W,              
+                            ./content-img/olga-354.jpg 354w,
+                            ./content-img/olga-354-2x.jpg 708W,
+                            ./content-img/olga-450.jpg 450w,
+                            ./content-img/olga-450@2x.jpg 900w"
+                src="./content-img/olga-450.jpg"
+                alt="Фотография Ольга"
+                sizes="(min-width:769px) 20vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
+            </picture>
+
             <div class="info-card-team">
               <h3 class="team-title">Ольга Иванова</h3>
               <p class="team-position">Frontend Developer</p>
@@ -326,10 +379,34 @@
             </div>
           </li>
           <li class="team-list">
-            <img
-              src="./img/fotoRobert.jpg"
-              alt="Фотография Андрей Шевченко"
-            />
+            <picture>
+              <source
+                srcset="
+                ./content-img/andrey-270.webp 270w,              
+                ./content-img/andrey-354.webp 354w,
+                ./content-img/andrey-450.webp 450W,
+                ./content-img/andrey-270-2x.webp 540w,
+                ./content-img/andrey-354-2x.webp 708w,
+                ./content-img/andrey-450-2x.webp 900W"
+                type="image/webp"
+                sizes="(min-width:769px) 25vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
+
+              <img
+                class="team-foto"
+                srcset="
+                  ./content-img/andrey-270.jpg 270w,
+                  ./content-img/andrey-270@2x.jpg 270W,              
+                  ./content-img/andrey-354.jpg 354w,
+                  ./content-img/andrey-354-2x.jpg 708W,
+                  ./content-img/andrey-450.jpg 450w,
+                  ./content-img/andrey-450@2x.jpg 900w"
+                src="./content-img/andrey-450.jpg"
+                alt="Фотография Андрей Шевченко"
+                sizes="(min-width:769px) 20vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
+            </picture>
+
             <div class="info-card-team">
               <h3 class="team-title">Андрей Шевченко</h3>
               <p class="team-position">Marketing</p>
@@ -382,10 +459,34 @@
             </div>
           </li>
           <li class="team-list">
-            <img
-              src="./img/fotoMartin.jpg"
-              alt="Фотография Иван Николаев"
-            />
+            <picture>
+              <source
+                srcset="
+                            ./content-img/ivan-270.webp 270w,              
+                            ./content-img/ivan-354.webp 354w,
+                            ./content-img/ivan-450.webp 450W,
+                            ./content-img/ivan-270-2x.webp 540w,
+                            ./content-img/ivan-354-2x.webp 708w,
+                            ./content-img/ivan-450-2x.webp 900W"
+                type="image/webp"
+                sizes="(min-width:769px) 25vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
+
+              <img
+                class="team-foto"
+                srcset="
+                              ./content-img/ivan-270.jpg 270w,
+                              ./content-img/ivan-270@2x.jpg 270W,              
+                              ./content-img/ivan-354.jpg 354w,
+                              ./content-img/ivan-354-2x.jpg 708W,
+                              ./content-img/ivan-450.jpg 450w,
+                              ./content-img/ivan-450@2x.jpg 900w"
+                src="./content-img/ivan-450.jpg"
+                alt="Фотография Иван Николаев"
+                sizes="(min-width:769px) 20vw, (min-width:481px) 50vw, (max-width:450px) 100vw"
+              />
+            </picture>
+
             <div class="info-card-team">
               <h3 class="team-title">Иван Николаев</h3>
               <p class="team-position">UI Designer</p>
@@ -527,13 +628,12 @@
 
           <address class="address">
             <span class="adress-fotter">
-              г. Киев, пр-т Леси Украинки, 26 
+              г. Киев, пр-т Леси Украинки, 26
             </span>
 
             <a class="contacts-in-footer link" href="mailto:info@example.com"
               >info@example.com</a
             >
-          
 
             <a class="contacts-in-footer link" href="tel:+390991111111"
               >+38 099 111 11 11</a
@@ -593,10 +693,10 @@
           </div>
         </section>
         <div class="mailing">
-          <div class="subscription">  
+          <div class="subscription">
             <b class="footer-title">подпишитесь на рассылку</b>
-            <label  class="mail-input">
-              <input class="input-mail" type="email" placeholder="E-mail">
+            <label class="mail-input">
+              <input class="input-mail" type="email" placeholder="E-mail" />
             </label>
           </div>
           <button class="mail-to" type="button">
@@ -613,86 +713,93 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-          <h2 class="h1-modal">
-            Оставьте свои данные, мы вам перезвоним
-          </h2>
-          <form class="modal-form">
-            <label class="form-fild">
-              <input class="form-input" 
-                type="text" name="name" placeholder=" ">
-                <span class="input-name">Имя</span>
-                <div class="vrapper-icon" >
-                  <svg class="fild-icon" width="16px" height="16px">
-                    <use href="./img/symbol-defs.svg#icon-body"></use>
-                  </svg>
-                </div>
-              </label>
-            <label class="form-fild">
-              <input class="form-input" type="tel"
-                 name="telephone" placeholder=" ">
-                <span class="input-name">Телефон</span>
-                <div class="vrapper-icon" >
-                  <svg class="fild-icon" width="16px" height="16px">
-                    <use href="./img/symbol-defs.svg#icon-tel"></use>
-                  </svg>
-                </div>
-            </label>
-
-            <label class="form-fild">
-              <input class="form-input" type="email" 
-              name="mail" placeholder=" ">
-
-              <span class="input-name">Почта</span>
-              <div class="vrapper-icon" >
-                <svg class="fild-icon" width="16px" height="16px">
-                  <use href="./img/symbol-defs.svg#icon-mail"></use>
-                </svg>
-              </div>
-            </label>
-
-
-            <!-- ячейка оставьте комментарии -->
-
-
-            <label class="form-fild placeholder-area">
-              
-              <textarea  placeholder=" "
-              class="comment"
-              name="comment"></textarea>
-
-              <span class="text-comment">Kомментарий</span>
-            </label>
-
-            <label class="checkbox">
-                <input class="check visually-hidden" id="checkbox" type="checkbox" name="checkbox">
-                <div class="chek-icon"></div>
-                 <span for="checkbox">Соглашаюсь с рассылкой и принимаю 
-                   <a class="terms" href="/">Условия договора</a></span>
-            </label>
-
-             <div>
-               <button class="send" type="submit"
-               name="send">Отправить</button>
-             </div>
-          </form> 
-
-          <div  class="close">
-            <button class="close-icon" data-modal-close type="button" name="close">
-              <svg  width="11px" height="11px">
-                <use href="./img/symbol-defs.svg#icon-x "></use>
+        <h2 class="h1-modal">
+          Оставьте свои данные, мы вам перезвоним
+        </h2>
+        <form class="modal-form">
+          <label class="form-fild">
+            <input class="form-input" type="text" name="name" placeholder=" " />
+            <span class="input-name">Имя</span>
+            <div class="vrapper-icon">
+              <svg class="fild-icon" width="16px" height="16px">
+                <use href="./img/symbol-defs.svg#icon-body"></use>
               </svg>
-            </button>
-           </div>
+            </div>
+          </label>
+          <label class="form-fild">
+            <input
+              class="form-input"
+              type="tel"
+              name="telephone"
+              placeholder=" "
+            />
+            <span class="input-name">Телефон</span>
+            <div class="vrapper-icon">
+              <svg class="fild-icon" width="16px" height="16px">
+                <use href="./img/symbol-defs.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </label>
 
+          <label class="form-fild">
+            <input
+              class="form-input"
+              type="email"
+              name="mail"
+              placeholder=" "
+            />
+
+            <span class="input-name">Почта</span>
+            <div class="vrapper-icon">
+              <svg class="fild-icon" width="16px" height="16px">
+                <use href="./img/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </label>
+
+          <!-- ячейка оставьте комментарии -->
+
+          <label class="form-fild placeholder-area">
+            <textarea placeholder=" " class="comment" name="comment"></textarea>
+
+            <span class="text-comment">Kомментарий</span>
+          </label>
+
+          <label class="checkbox">
+            <input
+              class="check visually-hidden"
+              id="checkbox"
+              type="checkbox"
+              name="checkbox"
+            />
+            <div class="chek-icon"></div>
+            <span for="checkbox"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="terms" href="/">Условия договора</a></span
+            >
+          </label>
+
+          <div>
+            <button class="send" type="submit" name="send">Отправить</button>
+          </div>
+        </form>
+
+        <div class="close">
+          <button
+            class="close-icon"
+            data-modal-close
+            type="button"
+            name="close"
+          >
+            <svg width="11px" height="11px">
+              <use href="./img/symbol-defs.svg#icon-x "></use>
+            </svg>
+          </button>
+        </div>
       </div>
-
     </div>
-
-
 
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
-
-
   </body>
 </html>
