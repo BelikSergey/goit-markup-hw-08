@@ -600,6 +600,12 @@ svg {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .list-services {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
 .services-link {
   position: absolute;
   bottom: 0;

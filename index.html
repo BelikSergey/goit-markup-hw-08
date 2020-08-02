@@ -146,12 +146,23 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list container">
             <li class="list-services">
-               <img
-                 src="./img/projects1.jpg"
-                 width="370"
-                 height="294"
+               <picture>
+                  <!-- <source srcset="
+                  ./content-img/project1-370.webp 370w,
+                  ./content-img/project1-370-2x.webp 740w"                  "
+                   type="image/webp">   -->
+
+                
+                <img srcset="
+                ./content-img/project1-370.jpg 370w, 
+                ./content-img/project1-370-2x.jpg 740w"
+
+                 src="./content-img/project1-370.jpg"
+                
                  alt="на картинке ноутбук"
+                
                />
+               </picture>
            
               <a class="services-link link" href="/">Десктопные приложения</a>
             
